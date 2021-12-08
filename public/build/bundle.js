@@ -42,9 +42,6 @@ var app = (function () {
     function text(data) {
         return document.createTextNode(data);
     }
-    function space() {
-        return text(' ');
-    }
     function attr(node, attribute, value) {
         if (value == null)
             node.removeAttribute(attribute);
@@ -283,13 +280,6 @@ var app = (function () {
         else
             dispatch_dev('SvelteDOMSetAttribute', { node, attribute, value });
     }
-    function set_data_dev(text, data) {
-        data = '' + data;
-        if (text.wholeText === data)
-            return;
-        dispatch_dev('SvelteDOMSetData', { node: text, data });
-        text.data = data;
-    }
     function validate_slots(name, slot, keys) {
         for (const slot_key of Object.keys(slot)) {
             if (!~keys.indexOf(slot_key)) {
@@ -324,35 +314,30 @@ var app = (function () {
     function create_fragment(ctx) {
     	let main;
     	let h1;
-    	let t0;
     	let t1;
-    	let t2;
-    	let t3;
     	let p;
-    	let t4;
+    	let t2;
     	let a;
-    	let t6;
+    	let t4;
 
     	const block = {
     		c: function create() {
     			main = element("main");
     			h1 = element("h1");
-    			t0 = text("Hello ");
-    			t1 = text(/*name*/ ctx[0]);
-    			t2 = text("!");
-    			t3 = space();
+    			h1.textContent = "curriculum vitae";
+    			t1 = text("\r\n\r\n\tDomeinen\r\n\t1. Plannings- en beheersoftware voor uitzenddiensten van personenwagenvervoer en locatiewerk.\r\n\t2. hedgingsoftware voor grondstoffenhandel.\r\n\r\n\r\n\r\n\t2020\r\n\tProjecten\r\n\t° proof of concept maken voor API: REST, GraphQL, gRPC\r\n\t° proof of concept maken voor frontend in .NET Core: Razor Pages, MVC, Blazor\r\n\t° ontsluiten legacy .net 4.6 code in een gRPC- en GraphQL-service\r\n\r\n\tAnalyse en ontwerp\r\n\t°\r\n\tDevOps en projectplanning\r\n\t°\r\n\r\n\tOntwikkeling\r\n\t° ASP.NET Core\r\n\r\n\r\n\t2016 - 2019\r\n\tProjecten\r\n\t° opzetten CI/CD pipeline voor verschillende applicatietypes in TFS\r\n\t° workItem-synchronisatie tussen TFS en monday.com\r\n\t° integratie tussen MoreApp-formulieren en backendsysteem\r\n\t° integratie tussen AFAS en backendsysteem\r\n\t° migratie van legacy database/software naar Entity Framework en hogere .net versie\r\n\t° verplaatsen rekeninstensieve query naar SQL Azure en tabel vullen met bulkinsert\r\n\t° Single Sign On (SSO) voor drie websites realiseren met eigen autorisatieserver\r\n\t° integratie van een 3d party (Python-)planningsalgoritme met backendsysteem\r\n\t° ontwerpen en bouwen van een algoritme voor planning van locatiewerk\r\n\t° toevoegen en refactoren van diverse functionaliteit aan bestaande software\r\n\tAnalyse en ontwerp\r\n\t° aandacht voor onderhoudbaarheid, testbaarheid, veiligheid, stabiliteit, performance, duidelijk ontwerp / design patterns, logging en documentatie.\r\n\t° opstellen van specificaties en urenbegroting\r\n\t° Test Driven uitwerking van gedetailleerde specs\r\n\t° GUI ontwerp\r\n\tDevOps en projectplanning\r\n\t° Build- en Release-omgeving inrichten onderhouden in TFS 2015/’18\r\n\t° REST-API en client libraries TFS, PowerShell, Branching & Merging in TFVC, FTP.\r\n\t° optimaliseren in TFS van het configuratiebeheer van de applicaties\r\n\t° installatie(scripts) van webapplicaties in IIS / installeren SSL certificaten\r\n\t° Windows Server 2008/12/16 (basis DevOps gebruik)\r\n\t° sprintplanning in TFS\r\n\tOntwikkeling\r\n\t° Uitbouwen en onderhouden desktop-apps, websites / webservices en Windows Services\r\n\t° unittesten en CodedUI-testen\r\n\t° ASP.NET WebForms + MVC / WebAPI / OWIN / javascript (summier)\r\n\t° SSO met IdentityServer3. Later gemigreerd naar IdentityServer4 / ASP.NET Core / Dapper.\r\n\t° Windows Services / FireDaemon om Python scripts te hosten, alsmede enig onderhoud aan Python code zelf\r\n\t° WinForms  (VB.NET en C#)\r\n\t° SQL Server 2012/16 / Entity Framework / LINQ\r\n\t° Google Docs API\r\n\t° SpreadheetLight\r\n\t° Azure (SQL / Storage)\r\n\t° Unity + Simple Injector / SeriLog\r\n\t° diversen, o.a. RegEx, xpath, xml/json parsing\r\n\r\n\t");
     			p = element("p");
-    			t4 = text("Visit the ");
+    			t2 = text("Visit the ");
     			a = element("a");
     			a.textContent = "Svelte tutorial";
-    			t6 = text(" to learn how to build Svelte apps.");
+    			t4 = text(" to learn how to build Svelte apps.");
     			attr_dev(h1, "class", "svelte-1tky8bj");
-    			add_location(h1, file, 5, 1, 46);
+    			add_location(h1, file, 5, 1, 51);
     			attr_dev(a, "href", "https://svelte.dev/tutorial");
-    			add_location(a, file, 6, 14, 83);
-    			add_location(p, file, 6, 1, 70);
+    			add_location(a, file, 67, 12, 2651);
+    			add_location(p, file, 66, 1, 2634);
     			attr_dev(main, "class", "svelte-1tky8bj");
-    			add_location(main, file, 4, 0, 38);
+    			add_location(main, file, 4, 0, 42);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -360,18 +345,13 @@ var app = (function () {
     		m: function mount(target, anchor) {
     			insert_dev(target, main, anchor);
     			append_dev(main, h1);
-    			append_dev(h1, t0);
-    			append_dev(h1, t1);
-    			append_dev(h1, t2);
-    			append_dev(main, t3);
+    			append_dev(main, t1);
     			append_dev(main, p);
-    			append_dev(p, t4);
+    			append_dev(p, t2);
     			append_dev(p, a);
-    			append_dev(p, t6);
+    			append_dev(p, t4);
     		},
-    		p: function update(ctx, [dirty]) {
-    			if (dirty & /*name*/ 1) set_data_dev(t1, /*name*/ ctx[0]);
-    		},
+    		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {

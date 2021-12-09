@@ -6,16 +6,18 @@
 <main>
 	<Box>
 		<h2>curriculum vitae</h2>
+		<p>laatste bijwerking: 9 december 2021</p>
 	</Box>
 	<Box>
 		<h4>Domeinen</h4>
 		<p>1. Plannings- en beheersoftware voor uitzenddiensten van personenwagenvervoer en locatiewerk.</p>
-		<p>2. hedgingsoftware voor grondstoffenhandel.</p>
+		<p>2. hedgingsoftware voor grondstoffenhandel. (tot 2019)</p>
 	</Box>
 	<Box>
 		<h4>Projecten 2021</h4>
 		<p>Docker</p>
 		<p>Svelte</p>
+		<p>Swagger</p>
 	</Box>
 	<Box>
 		<h4>Projecten 2020</h4>

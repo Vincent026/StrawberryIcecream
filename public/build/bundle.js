@@ -519,18 +519,28 @@ var app = (function () {
     // (7:1) <Box>
     function create_default_slot_5(ctx) {
     	let h2;
+    	let t1;
+    	let p;
 
     	const block = {
     		c: function create() {
     			h2 = element("h2");
     			h2.textContent = "curriculum vitae";
+    			t1 = space();
+    			p = element("p");
+    			p.textContent = "laatste bijwerking: 9 december 2021";
     			add_location(h2, file, 7, 2, 94);
+    			add_location(p, file, 8, 2, 123);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h2, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, p, anchor);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h2);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(p);
     		}
     	};
 
@@ -545,7 +555,7 @@ var app = (function () {
     	return block;
     }
 
-    // (10:1) <Box>
+    // (11:1) <Box>
     function create_default_slot_4(ctx) {
     	let h4;
     	let t1;
@@ -562,10 +572,10 @@ var app = (function () {
     			p0.textContent = "1. Plannings- en beheersoftware voor uitzenddiensten van personenwagenvervoer en locatiewerk.";
     			t3 = space();
     			p1 = element("p");
-    			p1.textContent = "2. hedgingsoftware voor grondstoffenhandel.";
-    			add_location(h4, file, 10, 2, 140);
-    			add_location(p0, file, 11, 2, 161);
-    			add_location(p1, file, 12, 2, 265);
+    			p1.textContent = "2. hedgingsoftware voor grondstoffenhandel. (tot 2019)";
+    			add_location(h4, file, 11, 2, 186);
+    			add_location(p0, file, 12, 2, 207);
+    			add_location(p1, file, 13, 2, 311);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -587,20 +597,22 @@ var app = (function () {
     		block,
     		id: create_default_slot_4.name,
     		type: "slot",
-    		source: "(10:1) <Box>",
+    		source: "(11:1) <Box>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (15:1) <Box>
+    // (16:1) <Box>
     function create_default_slot_3(ctx) {
     	let h4;
     	let t1;
     	let p0;
     	let t3;
     	let p1;
+    	let t5;
+    	let p2;
 
     	const block = {
     		c: function create() {
@@ -612,9 +624,13 @@ var app = (function () {
     			t3 = space();
     			p1 = element("p");
     			p1.textContent = "Svelte";
-    			add_location(h4, file, 15, 2, 336);
-    			add_location(p0, file, 16, 2, 363);
-    			add_location(p1, file, 17, 2, 380);
+    			t5 = space();
+    			p2 = element("p");
+    			p2.textContent = "Swagger";
+    			add_location(h4, file, 16, 2, 393);
+    			add_location(p0, file, 17, 2, 420);
+    			add_location(p1, file, 18, 2, 437);
+    			add_location(p2, file, 19, 2, 454);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -622,6 +638,8 @@ var app = (function () {
     			insert_dev(target, p0, anchor);
     			insert_dev(target, t3, anchor);
     			insert_dev(target, p1, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, p2, anchor);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h4);
@@ -629,6 +647,8 @@ var app = (function () {
     			if (detaching) detach_dev(p0);
     			if (detaching) detach_dev(t3);
     			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(p2);
     		}
     	};
 
@@ -636,14 +656,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3.name,
     		type: "slot",
-    		source: "(15:1) <Box>",
+    		source: "(16:1) <Box>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (20:1) <Box>
+    // (22:1) <Box>
     function create_default_slot_2(ctx) {
     	let h4;
     	let t1;
@@ -666,10 +686,10 @@ var app = (function () {
     			t5 = space();
     			p2 = element("p");
     			p2.textContent = "ontsluiten legacy .net 4.6 code in een gRPC- en GraphQL-service";
-    			add_location(h4, file, 20, 2, 414);
-    			add_location(p0, file, 21, 2, 441);
-    			add_location(p1, file, 22, 2, 504);
-    			add_location(p2, file, 23, 2, 590);
+    			add_location(h4, file, 22, 2, 489);
+    			add_location(p0, file, 23, 2, 516);
+    			add_location(p1, file, 24, 2, 579);
+    			add_location(p2, file, 25, 2, 665);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -695,14 +715,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2.name,
     		type: "slot",
-    		source: "(20:1) <Box>",
+    		source: "(22:1) <Box>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (26:1) <Box>
+    // (28:1) <Box>
     function create_default_slot_1(ctx) {
     	let h40;
     	let t1;
@@ -885,42 +905,42 @@ var app = (function () {
     			t69 = space();
     			p30 = element("p");
     			p30.textContent = "• diversen, o.a. RegEx, xpath, xml/json parsing";
-    			add_location(h40, file, 26, 2, 681);
-    			add_location(p0, file, 27, 2, 715);
-    			add_location(p1, file, 28, 2, 793);
-    			add_location(p2, file, 29, 2, 854);
-    			add_location(p3, file, 30, 2, 922);
-    			add_location(p4, file, 31, 2, 975);
-    			add_location(p5, file, 32, 2, 1069);
-    			add_location(p6, file, 33, 2, 1162);
-    			add_location(p7, file, 34, 2, 1253);
-    			add_location(p8, file, 35, 2, 1340);
-    			add_location(p9, file, 36, 2, 1420);
-    			add_location(h3, file, 37, 2, 1507);
-    			add_location(p10, file, 38, 2, 1538);
-    			add_location(p11, file, 39, 2, 1698);
-    			add_location(p12, file, 40, 2, 1753);
-    			add_location(h41, file, 41, 2, 1811);
-    			add_location(h42, file, 42, 2, 1835);
-    			add_location(p13, file, 43, 2, 1873);
-    			add_location(p14, file, 44, 2, 1948);
-    			add_location(p15, file, 45, 2, 2038);
-    			add_location(p16, file, 46, 2, 2115);
-    			add_location(p17, file, 47, 2, 2203);
-    			add_location(p18, file, 48, 2, 2264);
-    			add_location(h43, file, 49, 2, 2298);
-    			add_location(p19, file, 50, 2, 2323);
-    			add_location(p20, file, 51, 2, 2417);
-    			add_location(p21, file, 52, 2, 2458);
-    			add_location(p22, file, 53, 2, 2532);
-    			add_location(p23, file, 54, 2, 2632);
-    			add_location(p24, file, 55, 2, 2747);
-    			add_location(p25, file, 56, 2, 2784);
-    			add_location(p26, file, 57, 2, 2841);
-    			add_location(p27, file, 58, 2, 2869);
-    			add_location(p28, file, 59, 2, 2897);
-    			add_location(p29, file, 60, 2, 2931);
-    			add_location(p30, file, 61, 2, 2977);
+    			add_location(h40, file, 28, 2, 756);
+    			add_location(p0, file, 29, 2, 790);
+    			add_location(p1, file, 30, 2, 868);
+    			add_location(p2, file, 31, 2, 929);
+    			add_location(p3, file, 32, 2, 997);
+    			add_location(p4, file, 33, 2, 1050);
+    			add_location(p5, file, 34, 2, 1144);
+    			add_location(p6, file, 35, 2, 1237);
+    			add_location(p7, file, 36, 2, 1328);
+    			add_location(p8, file, 37, 2, 1415);
+    			add_location(p9, file, 38, 2, 1495);
+    			add_location(h3, file, 39, 2, 1582);
+    			add_location(p10, file, 40, 2, 1613);
+    			add_location(p11, file, 41, 2, 1773);
+    			add_location(p12, file, 42, 2, 1828);
+    			add_location(h41, file, 43, 2, 1886);
+    			add_location(h42, file, 44, 2, 1910);
+    			add_location(p13, file, 45, 2, 1948);
+    			add_location(p14, file, 46, 2, 2023);
+    			add_location(p15, file, 47, 2, 2113);
+    			add_location(p16, file, 48, 2, 2190);
+    			add_location(p17, file, 49, 2, 2278);
+    			add_location(p18, file, 50, 2, 2339);
+    			add_location(h43, file, 51, 2, 2373);
+    			add_location(p19, file, 52, 2, 2398);
+    			add_location(p20, file, 53, 2, 2492);
+    			add_location(p21, file, 54, 2, 2533);
+    			add_location(p22, file, 55, 2, 2607);
+    			add_location(p23, file, 56, 2, 2707);
+    			add_location(p24, file, 57, 2, 2822);
+    			add_location(p25, file, 58, 2, 2859);
+    			add_location(p26, file, 59, 2, 2916);
+    			add_location(p27, file, 60, 2, 2944);
+    			add_location(p28, file, 61, 2, 2972);
+    			add_location(p29, file, 62, 2, 3006);
+    			add_location(p30, file, 63, 2, 3052);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h40, anchor);
@@ -1074,14 +1094,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1.name,
     		type: "slot",
-    		source: "(26:1) <Box>",
+    		source: "(28:1) <Box>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (64:1) <Box>
+    // (66:1) <Box>
     function create_default_slot(ctx) {
     	let p;
 
@@ -1089,7 +1109,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "hier komen de projecten van 1994 - 2016";
-    			add_location(p, file, 64, 2, 3052);
+    			add_location(p, file, 66, 2, 3127);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -1103,7 +1123,7 @@ var app = (function () {
     		block,
     		id: create_default_slot.name,
     		type: "slot",
-    		source: "(64:1) <Box>",
+    		source: "(66:1) <Box>",
     		ctx
     	});
 
@@ -1199,8 +1219,8 @@ var app = (function () {
     			a.textContent = "Svelte tutorial";
     			t8 = text(" to learn how to build Svelte apps.");
     			attr_dev(a, "href", "https://svelte.dev/tutorial");
-    			add_location(a, file, 69, 12, 3131);
-    			add_location(p, file, 68, 1, 3114);
+    			add_location(a, file, 71, 12, 3206);
+    			add_location(p, file, 70, 1, 3189);
     			attr_dev(main, "class", "svelte-175ol03");
     			add_location(main, file, 5, 0, 76);
     		},

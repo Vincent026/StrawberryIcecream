@@ -6,7 +6,7 @@
 <main>
 	<Box>
 		<h2>curriculum vitae</h2>
-		<p>laatste bijwerking: 9 december 2021</p>
+		<p>laatste bijwerking: 9 december 2021 xx</p>
 	</Box>
 	<Box>
 		<h4>Domeinen</h4>

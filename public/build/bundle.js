@@ -528,7 +528,7 @@ var app = (function () {
     			h2.textContent = "curriculum vitae";
     			t1 = space();
     			p = element("p");
-    			p.textContent = "laatste bijwerking: 9 december 2021";
+    			p.textContent = "laatste bijwerking: 9 december 2021 xx";
     			add_location(h2, file, 7, 2, 94);
     			add_location(p, file, 8, 2, 123);
     		},
@@ -573,9 +573,9 @@ var app = (function () {
     			t3 = space();
     			p1 = element("p");
     			p1.textContent = "2. hedgingsoftware voor grondstoffenhandel. (tot 2019)";
-    			add_location(h4, file, 11, 2, 186);
-    			add_location(p0, file, 12, 2, 207);
-    			add_location(p1, file, 13, 2, 311);
+    			add_location(h4, file, 11, 2, 189);
+    			add_location(p0, file, 12, 2, 210);
+    			add_location(p1, file, 13, 2, 314);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -627,10 +627,10 @@ var app = (function () {
     			t5 = space();
     			p2 = element("p");
     			p2.textContent = "Swagger";
-    			add_location(h4, file, 16, 2, 393);
-    			add_location(p0, file, 17, 2, 420);
-    			add_location(p1, file, 18, 2, 437);
-    			add_location(p2, file, 19, 2, 454);
+    			add_location(h4, file, 16, 2, 396);
+    			add_location(p0, file, 17, 2, 423);
+    			add_location(p1, file, 18, 2, 440);
+    			add_location(p2, file, 19, 2, 457);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -686,10 +686,10 @@ var app = (function () {
     			t5 = space();
     			p2 = element("p");
     			p2.textContent = "ontsluiten legacy .net 4.6 code in een gRPC- en GraphQL-service";
-    			add_location(h4, file, 22, 2, 489);
-    			add_location(p0, file, 23, 2, 516);
-    			add_location(p1, file, 24, 2, 579);
-    			add_location(p2, file, 25, 2, 665);
+    			add_location(h4, file, 22, 2, 492);
+    			add_location(p0, file, 23, 2, 519);
+    			add_location(p1, file, 24, 2, 582);
+    			add_location(p2, file, 25, 2, 668);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h4, anchor);
@@ -905,42 +905,42 @@ var app = (function () {
     			t69 = space();
     			p30 = element("p");
     			p30.textContent = "• diversen, o.a. RegEx, xpath, xml/json parsing";
-    			add_location(h40, file, 28, 2, 756);
-    			add_location(p0, file, 29, 2, 790);
-    			add_location(p1, file, 30, 2, 868);
-    			add_location(p2, file, 31, 2, 929);
-    			add_location(p3, file, 32, 2, 997);
-    			add_location(p4, file, 33, 2, 1050);
-    			add_location(p5, file, 34, 2, 1144);
-    			add_location(p6, file, 35, 2, 1237);
-    			add_location(p7, file, 36, 2, 1328);
-    			add_location(p8, file, 37, 2, 1415);
-    			add_location(p9, file, 38, 2, 1495);
-    			add_location(h3, file, 39, 2, 1582);
-    			add_location(p10, file, 40, 2, 1613);
-    			add_location(p11, file, 41, 2, 1773);
-    			add_location(p12, file, 42, 2, 1828);
-    			add_location(h41, file, 43, 2, 1886);
-    			add_location(h42, file, 44, 2, 1910);
-    			add_location(p13, file, 45, 2, 1948);
-    			add_location(p14, file, 46, 2, 2023);
-    			add_location(p15, file, 47, 2, 2113);
-    			add_location(p16, file, 48, 2, 2190);
-    			add_location(p17, file, 49, 2, 2278);
-    			add_location(p18, file, 50, 2, 2339);
-    			add_location(h43, file, 51, 2, 2373);
-    			add_location(p19, file, 52, 2, 2398);
-    			add_location(p20, file, 53, 2, 2492);
-    			add_location(p21, file, 54, 2, 2533);
-    			add_location(p22, file, 55, 2, 2607);
-    			add_location(p23, file, 56, 2, 2707);
-    			add_location(p24, file, 57, 2, 2822);
-    			add_location(p25, file, 58, 2, 2859);
-    			add_location(p26, file, 59, 2, 2916);
-    			add_location(p27, file, 60, 2, 2944);
-    			add_location(p28, file, 61, 2, 2972);
-    			add_location(p29, file, 62, 2, 3006);
-    			add_location(p30, file, 63, 2, 3052);
+    			add_location(h40, file, 28, 2, 759);
+    			add_location(p0, file, 29, 2, 793);
+    			add_location(p1, file, 30, 2, 871);
+    			add_location(p2, file, 31, 2, 932);
+    			add_location(p3, file, 32, 2, 1000);
+    			add_location(p4, file, 33, 2, 1053);
+    			add_location(p5, file, 34, 2, 1147);
+    			add_location(p6, file, 35, 2, 1240);
+    			add_location(p7, file, 36, 2, 1331);
+    			add_location(p8, file, 37, 2, 1418);
+    			add_location(p9, file, 38, 2, 1498);
+    			add_location(h3, file, 39, 2, 1585);
+    			add_location(p10, file, 40, 2, 1616);
+    			add_location(p11, file, 41, 2, 1776);
+    			add_location(p12, file, 42, 2, 1831);
+    			add_location(h41, file, 43, 2, 1889);
+    			add_location(h42, file, 44, 2, 1913);
+    			add_location(p13, file, 45, 2, 1951);
+    			add_location(p14, file, 46, 2, 2026);
+    			add_location(p15, file, 47, 2, 2116);
+    			add_location(p16, file, 48, 2, 2193);
+    			add_location(p17, file, 49, 2, 2281);
+    			add_location(p18, file, 50, 2, 2342);
+    			add_location(h43, file, 51, 2, 2376);
+    			add_location(p19, file, 52, 2, 2401);
+    			add_location(p20, file, 53, 2, 2495);
+    			add_location(p21, file, 54, 2, 2536);
+    			add_location(p22, file, 55, 2, 2610);
+    			add_location(p23, file, 56, 2, 2710);
+    			add_location(p24, file, 57, 2, 2825);
+    			add_location(p25, file, 58, 2, 2862);
+    			add_location(p26, file, 59, 2, 2919);
+    			add_location(p27, file, 60, 2, 2947);
+    			add_location(p28, file, 61, 2, 2975);
+    			add_location(p29, file, 62, 2, 3009);
+    			add_location(p30, file, 63, 2, 3055);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h40, anchor);
@@ -1109,7 +1109,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "hier komen de projecten van 1994 - 2016";
-    			add_location(p, file, 66, 2, 3127);
+    			add_location(p, file, 66, 2, 3130);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -1219,8 +1219,8 @@ var app = (function () {
     			a.textContent = "Svelte tutorial";
     			t8 = text(" to learn how to build Svelte apps.");
     			attr_dev(a, "href", "https://svelte.dev/tutorial");
-    			add_location(a, file, 71, 12, 3206);
-    			add_location(p, file, 70, 1, 3189);
+    			add_location(a, file, 71, 12, 3209);
+    			add_location(p, file, 70, 1, 3192);
     			attr_dev(main, "class", "svelte-175ol03");
     			add_location(main, file, 5, 0, 76);
     		},
